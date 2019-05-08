@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/crypto-app-react/static/css/main.6a68655d.chunk.css",
+    "main.js": "/crypto-app-react/static/js/main.83b1a6d5.chunk.js",
+    "main.js.map": "/crypto-app-react/static/js/main.83b1a6d5.chunk.js.map",
+    "runtime~main.js": "/crypto-app-react/static/js/runtime~main.4318fb6f.js",
+    "runtime~main.js.map": "/crypto-app-react/static/js/runtime~main.4318fb6f.js.map",
+    "static/js/2.0f1d4b6d.chunk.js": "/crypto-app-react/static/js/2.0f1d4b6d.chunk.js",
+    "static/js/2.0f1d4b6d.chunk.js.map": "/crypto-app-react/static/js/2.0f1d4b6d.chunk.js.map",
+    "index.html": "/crypto-app-react/index.html",
+    "precache-manifest.b7078ce78d3b8feeb15e28c1357394b3.js": "/crypto-app-react/precache-manifest.b7078ce78d3b8feeb15e28c1357394b3.js",
+    "service-worker.js": "/crypto-app-react/service-worker.js",
+    "static/css/main.6a68655d.chunk.css.map": "/crypto-app-react/static/css/main.6a68655d.chunk.css.map"
+  }
+}
