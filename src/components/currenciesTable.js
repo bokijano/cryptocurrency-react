@@ -11,17 +11,14 @@ class CurrenciesTable extends Component {
       this.state.cryptoAmount,
       this.props.currency.id
     );
-
+    this.setState({
+      activeButton: false
+    });
     console.log(this.state.cryptoAmount);
   };
   handleChange = e => {
     this.setState({
       cryptoAmount: e.target.value
-    });
-  };
-  deactivateButton = () => {
-    this.setState({
-      activeButton: false
     });
   };
   render() {
@@ -52,11 +49,7 @@ class CurrenciesTable extends Component {
                 value={this.state.cryptoAmount}
                 onChange={this.handleChange}
               />
-              <button
-                style={{ marginLeft: "5px" }}
-                onClick={this.deactivateButton}
-                className="btn btn-info"
-              >
+              <button style={{ marginLeft: "5px" }} className="btn btn-info">
                 Submit
               </button>
             </form>

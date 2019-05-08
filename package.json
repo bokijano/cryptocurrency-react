@@ -2,7 +2,7 @@
   "name": "crypto-track",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bokijano.github.io/crypto-app-react",
+  "homepage": "https://bokijano.github.io/cryptcurrency-react",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",

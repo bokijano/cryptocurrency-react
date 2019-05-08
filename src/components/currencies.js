@@ -1,25 +1,9 @@
 import React, { Component } from "react";
-import currencies from "./../currenciesData";
 import CurrenciesTable from "./currenciesTable";
 import Table from "react-bootstrap/Table";
 
 class Currencies extends Component {
-  state = {
-    currencies: currencies,
-    ownCurrency: []
-  };
-
-  addCryptoAmountValue = (cryptoAmount, id) => {
-    let currencies = this.state.currencies.find(currency => currency.id === id);
-    let newCurrency = { ...currencies, cryptoAmount };
-    let ownCurrencies = [...this.state.ownCurrency, newCurrency];
-    this.setState({
-      ownCurrency: ownCurrencies
-    });
-    console.log(currencies);
-    console.log(ownCurrencies);
-    console.log(this.state.ownCurrency);
-  };
+  state = {};
 
   render() {
     return (
@@ -39,12 +23,11 @@ class Currencies extends Component {
             </tr>
           </thead>
           <tbody>
-            {this.state.currencies.map(currency => (
+            {this.props.currencies.map(currency => (
               <CurrenciesTable
                 key={currency.id}
                 currency={currency}
-                findCurrency={this.findCurrency}
-                addCryptoAmountValue={this.addCryptoAmountValue}
+                addCryptoAmountValue={this.props.addCryptoAmountValue}
               />
             ))}
           </tbody>
