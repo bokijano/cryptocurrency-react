@@ -16,6 +16,7 @@ class CustomNavbar extends Component {
           <Nav className="navbar-head mr-auto">Check your coins!</Nav>
           <Nav>
             <Image
+              onClick={this.props.goToAmountPage}
               className="cart-main"
               src={Currency}
               alt="currency"

@@ -7,14 +7,15 @@ class CurrenciesTable extends Component {
   };
   handleSubmit = e => {
     e.preventDefault();
+    
     this.props.addCryptoAmountValue(
       this.state.cryptoAmount,
       this.props.currency.id
     );
+
     this.setState({
       activeButton: false
     });
-    console.log(this.state.cryptoAmount);
   };
   handleChange = e => {
     this.setState({
@@ -42,7 +43,9 @@ class CurrenciesTable extends Component {
 
         <td className="fontThree">
           {this.state.activeButton ? (
-            <form onSubmit={this.handleSubmit}>
+            <form
+               onSubmit={this.handleSubmit}
+              >
               <input
                 type="text"
                 placeholder="Enter amount"
@@ -54,15 +57,15 @@ class CurrenciesTable extends Component {
               </button>
             </form>
           ) : (
-            <form>
+            <form onSubmit={this.handleSubmit}>
               <input
-                type="text"
                 disabled={true}
                 value={this.state.cryptoAmount}
+                onChange={this.handleChange}
               />
               <button
                 style={{ marginLeft: "5px" }}
-                className="btn btn-warning"
+                className="btn btn-info"
                 disabled={true}
               >
                 Disabled

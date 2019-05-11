@@ -4,7 +4,6 @@ import Table from "react-bootstrap/Table";
 
 class Currencies extends Component {
   state = {};
-
   render() {
     return (
       <div style={{ marginTop: "100px" }} className="container">
@@ -27,6 +26,7 @@ class Currencies extends Component {
               <CurrenciesTable
                 key={currency.id}
                 currency={currency}
+                goToAmountPage={this.props.goToAmountPage}
                 addCryptoAmountValue={this.props.addCryptoAmountValue}
               />
             ))}

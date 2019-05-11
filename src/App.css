@@ -57,6 +57,10 @@
   margin-left: 25px;
 }
 
+.amount-page {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .navbar-head {
     display: none;
